@@ -11,17 +11,17 @@ var prompt_val_group0 = [
 	{
 		value: "Credit utilization ratio",
 		class: 'btn-default btn-agree',
-		weight: 1
+		weight: 0
 	},
 	{
 		value: "Marital status",
 		class: 'btn-default',
-		weight: 2
+		weight: 1
 	},
 	{
 		value: "Credit mix",
 		class: 'btn-default btn-disagree',
-		weight: 3
+		weight: 0
 	}
 ]
 
@@ -35,17 +35,17 @@ var prompt_val_group1 = [
 	{
 		value: "200%",
 		class: 'btn-default btn-agree',
-		weight: 1
+		weight: 0
 	},
 	{
 		value: "500%",
 		class: 'btn-default',
-		weight: 2
+		weight: 1
 	},
 	{
 		value: "400%",
 		class: 'btn-default btn-disagree',
-		weight: 3
+		weight: 0
 	}
 ]
 
@@ -60,17 +60,17 @@ var prompt_val_group2 = [
 	{
 		value: "Longest repayment term",
 		class: 'btn-default btn-agree',
-		weight: 1
+		weight: 0
 	},
 	{
 		value: "Shortest repayment term",
 		class: 'btn-default',
-		weight: 2
+		weight: 1
 	},
 	{
 		value: "None of the above",
 		class: 'btn-default btn-disagree',
-		weight: 3
+		weight: 0
 	}
 ]
 
@@ -79,22 +79,22 @@ var prompt_val_group3 = [
 	{
 		value: "Pay the full balance",
 		class: 'btn-default btn-strongly-agree',
-		weight: 0
+		weight: 1
 	},
 	{
 		value: "Pay only the minimum amount",
 		class: 'btn-default btn-agree',
-		weight: 1
+		weight: 0
 	},
 	{
 		value: "Pay as per your affordability",
 		class: 'btn-default',
-		weight: 2
+		weight: 0
 	},
 	{
 		value: "None of the above",
 		class: 'btn-default btn-disagree',
-		weight: 3
+		weight: 0
 	}
 ]
 
@@ -103,22 +103,22 @@ var prompt_val_group4 = [
 	{
 		value: "Save enough money to cover 3-6 months' worth of living expenses",
 		class: 'btn-default btn-strongly-agree',
-		weight: 0
+		weight: 1
 	},
 	{
 		value: "Save enough money to cover 2-3 years' worth of living expenses",
 		class: 'btn-default btn-agree',
-		weight: 1
+		weight: 0
 	},
 	{
 		value: "Save enough money to cover your expenses for 10 to 15 days",
 		class: 'btn-default',
-		weight: 2
+		weight: 0
 	},
 	{
 		value: "None of the above",
 		class: 'btn-default btn-disagree',
-		weight: 3
+		weight: 0
 	}
 ]
 
@@ -138,12 +138,12 @@ var prompt_val_group5 = [
 	{
 		value: "Lending Club, Prosper, Upstart",
 		class: 'btn-default',
-		weight: 2
+		weight: 0
 	},
 	{
 		value: "Bank of America, Chase, Discover",
 		class: 'btn-default btn-disagree',
-		weight: 3
+		weight: 0
 	}
 ]
 
