@@ -504,3 +504,47 @@ $('#share-score-btn').click(function () {
 	if (mailtoString !== false)
 		window.open(mailtoString);
 })
+
+
+
+
+$('#submit-research-btn').click(function () {
+	var emailId = $.trim($('#email_research').val()); //total
+	var emailRegx = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+	if(emailId == '') {
+		$('#email_validate').html('Please enter your email address').show().addClass('info-danger');
+		return ;
+	}
+	else if (emailRegx.test(emailId) == false) {
+		$('#email_validate').html('Please enter proper email address').show().addClass('info-danger');
+		return ;
+	}
+
+	$('#submit-research-btn'). attr('disabled','disabled');
+	$.ajax({
+		type: 'POST',
+		url: window.location.origin + '/fin-ed-api/public/index.php/api/updateFinEdResearch',
+		dataType: 'json',
+		encode: true,
+		crossDomain: true,
+		data: {
+			emailId: emailId,
+			totalScore: total
+		},
+		success: function (data) {
+			console.log(data);
+			if (data.status !='ok') {
+
+			} else {
+				$('#email_validate')
+				.html('Data submitted successfully. An email is transferred to your mailbox. Please verify it.')
+				.show().removeClass('info-danger').addClass('info-success');
+				//$('#submit-research-btn').removeAttr('disabled');
+			}
+		},
+		error: function (jqXHR, textStatus, errorThrown) {
+			//$('#getData').html(data);
+			$('#submit-research-btn').removeAttr('disabled');
+		}
+	});
+})
